@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter&display=swap" rel="stylesheet">
+    <title>Responsiivinen sivu</title>
+</head>
+<!---->
+<body>
+    <div class="wrapper">
+        <div class="box header">
+            <header>Tervetuloa</header>
+        </div>
+        <div class="box sidebar">
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="sivu1.html">Sivu 1</a></li>
+              </ul>
+        </div>
+        <div class="box content">
+            <header>Tämä sivu on rakennettu <br> Grid-menetelmällä</header>
+            <article>Jokaiselle osiolle on oma laatikko (tai box). 
+                Osiot on hyvin kustomoitavia, voit esimerkiksi muokata
+                osion leveyttä, korkeutta, etäisyyttä muihin osioihin,
+                väriä tai muotoa.
+            </article>
+            <article>
+                Grid-menetelmällä sivu saadaan responsiiviseksi käyttämällä
+                grid-template-areas ominaisuutta.
+                <img src="gridmenetelmä.png" alt="Toisen sivun koodi" title="Toisen sivun koodi"> <br>
+                Tämän avulla voidaan määritellä kuinka ison tilan osio vie sivulta.
+            </article>
+            <article>
+                Sivulla ollaan myös käytetty semanttisia tageja, eli tageja,
+                joiden nimi on selvästi kuvattu. Tämän osion tagi on article,
+                eli artikkeli. <br> Muita tageja ovat details, header, 
+                footer, main, jne.
+            </article>
+        </div>
+        <div class="box footer">
+            <footer>
+                <p>Nella Soudunsaari</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
