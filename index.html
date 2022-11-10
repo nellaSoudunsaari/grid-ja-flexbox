@@ -4,49 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter&display=swap" rel="stylesheet">
     <title>Responsiivinen sivu</title>
 </head>
-<!---->
 <body>
-    <div class="wrapper">
-        <div class="box header">
-            <header>Tervetuloa</header>
-        </div>
-        <div class="box sidebar">
-            <ul>
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="sivu1.html">Sivu 1</a></li>
-              </ul>
-        </div>
-        <div class="box content">
-            <header>Tämä sivu on rakennettu <br> Grid-menetelmällä</header>
-            <article>Jokaiselle osiolle on oma laatikko (tai box). 
-                Osiot on hyvin kustomoitavia, voit esimerkiksi muokata
-                osion leveyttä, korkeutta, etäisyyttä muihin osioihin,
-                väriä tai muotoa.
-            </article>
+    <!--Header-->
+    <header>
+        <h1>Tervetuloa</h1>
+    </header>
+    <!--Nav-->
+    <div class="navbar">
+        <a href="index.html">Etusivu</a>
+        <a href="sivu1.html">Sivu 1</a>
+      </div>
+    <!--Sisältö-->
+    <div class="row">
+        <div class="side">
+            <header class="sivullinen">Miltä sivun koodi näyttää</header>
             <article>
-                Grid-menetelmällä sivu saadaan responsiiviseksi käyttämällä
-                grid-template-areas ominaisuutta.
-                <img src="gridmenetelmä.png" alt="Toisen sivun koodi" title="Toisen sivun koodi"> <br>
-                Tämän avulla voidaan määritellä kuinka ison tilan osio vie sivulta.
+                <p>Voit katsoa kuvia lähempää viemällä hiiren niiden päälle.</p>
+                
+                <img id="image1" src="mediaquery.png" alt="">
+                <p>Tämän pätkän avulla sivusta saadaan hieman responsiivsempi.</p>
+                <br>
+                <img id="image1" src="osiot.png" alt="" >
+                <p>Tässä näkyy kuinka paljon osiot vievät tilaa sivulta.</p>
             </article>
-            <article>
-                Sivulla ollaan myös käytetty semanttisia tageja, eli tageja,
-                joiden nimi on selvästi kuvattu. Tämän osion tagi on article,
-                eli artikkeli. <br> Muita tageja ovat details, header, 
-                footer, main, jne.
+        
+        </div>
+        <main>
+            <header class="mainh">Tämä sivu on tehty flexboxilla</header>
+            <article>Flexbox-mallissa käytetään rivejä ja sarakkeita
+                sisällön lajittelussa. Jokaiselle osiolla määritellään kuinka monta
+                prosenttia sivusta ne vievät tilaa. Sivulla käytetään myös
+                mediakyselyitä (media queries), joiden avulla voidaan skaalata
+                sisältöä ja osioita laitteen koon mukaan.
             </article>
-        </div>
-        <div class="box footer">
-            <footer>
-                <p>Nella Soudunsaari</p>
-            </footer>
-        </div>
+        </main>
     </div>
+    <!--Footer-->
+    <footer>
+        <p>Nella Soudunsaari</p>
+    </footer>
 </body>
 </html>
